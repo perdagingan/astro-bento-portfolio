@@ -5,7 +5,7 @@ import PostRow from "../../components/Blog/PostRow.astro";
 
 const posts = (await getCollection("blog")).sort(
   (blogEntryA, blogEntryB) =>
-    blogEntryB.data.pubDate.getTime() - blogEntryA.data.pubDate.getTime()
+    (blogEntryB.data.pubDate ?? new Date()).getTime() - (blogEntryA.data.pubDate ?? new Date()).getTime()
 );
 ---
 
@@ -19,7 +19,7 @@ const posts = (await getCollection("blog")).sort(
 </script>
 
 <Layout
-  title="Gianmarco Cavallo - Blog"
+  title="Anam Fathonaya - Blog"
   description="Software developer with strong focus on the user experience animations and micro interactions"
 >
   <main
@@ -35,8 +35,8 @@ const posts = (await getCollection("blog")).sort(
       {
         posts.map((post) => (
           <PostRow
-            title={post.data.title}
-            date={post.data.pubDate}
+            title={post.data.title ?? ''}
+            date={post.data.pubDate ?? new Date()}
             url={post.slug}
           />
         ))

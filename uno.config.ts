@@ -66,5 +66,6 @@ export default defineConfig({
         serif: "Zodiak",
       },
     }),
+    
   ],
 });
