@@ -4,6 +4,8 @@ dist/
 # generated types
 .astro/
 
+src/pages/gallery/details
+
 # dependencies
 node_modules/
 
