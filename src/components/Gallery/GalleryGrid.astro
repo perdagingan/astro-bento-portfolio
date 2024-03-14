@@ -1,47 +1,88 @@
+---
+import { Image } from 'astro:assets';
+import photo1 from "../../assets/IMG-4.jpg";
+import photo2 from "../../assets/IMG-2.jpg";
+import photo3 from "../../assets/IMG-3.jpg";
+import photo4 from "../../assets/IMG-6.jpeg";
+import photo5 from "../../assets/IMG-7.jpg";
+import photo6 from "../../assets/JIS.jpg";
+import vidA from "../../assets/Rewind-ThirdGen.png";
+import vidB from "../../assets/Covid-Ad-BQAM.png";
+import vidC from "../../assets/Vista-JSIT.png";
+import vidD from "../../assets/Pramuka-BQAM.png";
+import vidE from "../../assets/Adzan-BQAM.png";
+import vidF from "../../assets/Imam-BQAM.png";
+---
 
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-screen-xl mx-auto">
     <div class="grid gap-4">
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+            <a href="/gallery/details/photo-1">
+                <Image class="h-auto max-w-full rounded-lg" src={photo2} alt="" alt="" format='avif' width={600} quality={30} transition:persist>
+            </a>
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+            <a href="/gallery/details/photo-2">
+                <Image class="h-auto max-w-full rounded-lg object-cover" src={photo3} alt="" alt="" format='avif' width={600} quality={30} transition:persist>
+            </a>
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
-        </div>
-    </div>
-    <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+            <a href="/gallery/details/vid-A">
+                <Image class="h-auto max-w-full rounded-lg object-cover" src={vidA} alt="" alt="" format='avif' width={600} quality={30} transition:persist>
+            </a>
         </div>
     </div>
     <div class="grid gap-4">
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+            <a href="/gallery/details/photo-3">
+                <Image class="h-auto max-w-full rounded-lg object-cover" src={photo4} alt="" format='avif' width={600} quality={30} transition:persist>
+            </a>
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+            <a href="/gallery/details/vid-B">
+                <Image class="h-auto max-w-full rounded-lg" src={vidB} alt="" format='avif' width={600} quality={30} transition:persist>
+            </a>
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+            <a href="/gallery/details/vid-C">
+                <Image class="h-auto max-w-full rounded-lg" src={vidC} alt="" format='avif' width={600} quality={30} transition:persist>
+            </a>
         </div>
     </div>
     <div class="grid gap-4">
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+            <a href="/gallery/details/vid-D">
+                <Image class="h-auto max-w-full rounded-lg" src={vidD} alt="" format='avif' width={600} quality={30} transition:persist>
+            </a>
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+            <a href="/gallery/details/vid-E">
+                <Image class="h-auto max-w-full rounded-lg" src={vidE} alt="" format='avif' width={600} quality={30} transition:persist>
+            </a>
+        </div>
+        
+        <div>
+            <a href="/gallery/details/photo-4">
+                <Image class="max-w-full rounded-lg" src={photo1} alt="" format='avif' width={600} quality={30} transition:persist>
+            </a>
+        </div>
+            
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <a href="/gallery/details/photo-5">
+                <Image class="h-auto max-w-full rounded-lg" src={photo6} alt="" format='avif' width={600} quality={30} transition:persist>
+            </a>
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
+            <a href="/gallery/details/photo-6">
+                <Image class="h-auto max-w-full rounded-lg" src={photo5} alt="" format='avif' width={600} quality={30} transition:persist>
+            </a>
+        </div>
+        <div>
+            <a href="/gallery/details/vid-F">
+                <Image class="h-auto max-w-full rounded-lg" src={vidF} alt="" format='avif' width={600} quality={30} transition:persist>
+            </a>
         </div>
     </div>
 </div>

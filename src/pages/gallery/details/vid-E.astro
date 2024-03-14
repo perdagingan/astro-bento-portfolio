@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+import GalleryLayout from "../../../components/Gallery/GalleryLayout.astro";
+
+import vidE from "../../assets/Adzan-BQAM.png";
+
+const { title, description } = Astro.props;
+import { formatTanggal } from "../../../js/utils";
+---
+
+<GalleryLayout title={title} description={description}>
+  <div class="absolute w-full h-full bg-zinc-800/60 top-0 bottom-0 z-50 flex items-center justify-center">
+
+    <div class="max-w-full bg-white border-gray rounded-lg shadow" >
+        <a href="/gallery">
+              <Image 
+              class="h-full max-w-[600px] rounded-t-lg"
+              src={vidE}
+              alt=""
+              format="avif"
+              width={600}
+              quality={80}
+              />
+            <p class="text-lg font-medium">{title}</p>
+            <p class="p-5">{description}</p>
+            <p class="text-sm">{formatTanggal("2020-03-05")}</p>
+        </a>
+    </div>
+    <slot/>
+</div>
+</GalleryLayout>
