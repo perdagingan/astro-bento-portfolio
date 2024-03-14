@@ -1,7 +1,7 @@
 ---
-import { getCollection } from "astro:content";
-import GalleryGrid from "./GalleryGrid.astro"
+import Gallery from "./Gallery.astro"
 import GalleriesBaseLayout from "../../layouts/GalleriesBaseLayout.astro"
+
 ---
 
 <script>
@@ -23,7 +23,7 @@ import GalleriesBaseLayout from "../../layouts/GalleriesBaseLayout.astro"
       >Back</a
     >
     <h1 class="text-4xl font-bold mb-4 text-neutral-100">Gallery</h1>
-    <GalleryGrid/>
+    <Gallery/>
   </main>
    <slot />
 </GalleriesBaseLayout>

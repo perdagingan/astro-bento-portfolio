@@ -1,14 +1,17 @@
 ---
 import { formatDate } from "../lib/helpers";
-import type { MarkdownLayoutProps } from "astro";
 import BasicLayout from "./BasicLayout.astro";
+
+import type { MarkdownLayoutProps } from "astro";
 
 type Props = MarkdownLayoutProps<{
   title: string;
   description: string;
   pubDate: string;
   minutesRead: string;
+  image: any;
 }>;
+
 
 const { frontmatter } = Astro.props;
 ---

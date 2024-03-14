@@ -1,8 +1,9 @@
 ---
 import GalleryLayout from "../../components/Gallery/GalleryLayout.astro";
-import ViewTransitions from "astro/components/ViewTransitions.astro";
 
+const { title, description } = Astro.props
 ---
-<GalleryLayout />
-  
 
+<GalleryLayout title={title} description={description}>
+  
+</GalleryLayout>

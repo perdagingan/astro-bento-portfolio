@@ -1,0 +1,77 @@
+---
+
+import { Image } from 'astro:assets';
+import semburApi from "../../assets/IMG-4.jpg";
+import gunungLawu from "../../assets/IMG-2.jpg";
+import lembahLawu from "../../assets/IMG-3.jpg";
+// import bukaBersamaBQAM from "../../assets/IMG-6.jpeg";
+import karnaval01 from "../../assets/IMG-7.jpg";
+import vidA from "../../assets/Rewind-ThirdGen.png";
+import vidB from "../../assets/Covid-Ad-BQAM.png";
+import vidC from "../../assets/Vista-JSIT.png";
+import vidD from "../../assets/Pramuka-BQAM.png";
+import vidE from "../../assets/Adzan-BQAM.png";
+import vidF from "../../assets/Imam-BQAM.png";
+import JIS from "../../assets/JIS.jpg";
+---
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-screen-xl mx-auto">
+    <div class="grid gap-4">
+        <div>
+            <a href="/gallery/details/photo-1">
+                <Image class="h-auto max-w-full rounded-lg" src={gunungLawu} alt="" alt="" format='avif' width={600} quality={30} transition:persist>
+            </a>
+        </div>
+        <div>
+            <a href="/gallery/details">
+                <Image class="h-auto max-w-full rounded-lg object-cover" src={lembahLawu} alt="" alt="" format='avif' width={600} quality={30} transition:persist>
+            </a>
+        </div>
+        <div>
+            <a href="/gallery/details">
+                <Image class="h-auto max-w-full rounded-lg object-cover" src={vidA} alt="" alt="" format='avif' width={600} quality={30} transition:persist>
+            </a>
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <a href="/gallery/details">
+                <Image class="h-auto max-w-full rounded-lg object-cover" src={vidA} alt="" format='avif' width={600} quality={30} transition:persist>
+            </a>
+        </div>
+        <div>
+            <Image class="h-auto max-w-full rounded-lg" src={vidB} alt="" format='avif' width={600} quality={30} transition:persist>
+        </div>
+        <div>
+            <Image class="h-auto max-w-full rounded-lg" src={vidC} alt="" format='avif' width={600} quality={30} transition:persist>
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <Image class="h-auto max-w-full rounded-lg" src={vidD} alt="" format='avif' width={600} quality={30} transition:persist>
+        </div>
+        <div>
+            <Image class="h-auto max-w-full rounded-lg" src={vidE} alt="" format='avif' width={600} quality={30} transition:persist>
+        </div>
+        
+        <div>
+            <a href="/gallery/details">
+                <Image class="max-w-full rounded-lg" src={semburApi} alt="" format='avif' width={600} quality={30} transition:persist>
+            </a>
+        </div>
+            
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <Image class="h-auto max-w-full rounded-lg" src={JIS} alt="" format='avif' width={600} quality={30} transition:persist>
+        </div>
+        <div>
+            <a href="/gallery/details">
+                <Image class="h-auto max-w-full rounded-lg" src={karnaval01} alt="" format='avif' width={600} quality={30} transition:persist>
+            </a>
+        </div>
+        <div>
+            <Image class="h-auto max-w-full rounded-lg" src={vidF} alt="" format='avif' width={600} quality={30} transition:persist>
+        </div>
+    </div>
+</div>
